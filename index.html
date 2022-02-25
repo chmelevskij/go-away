@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stop Putin </title>
+    <title>Stop Putin</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <style>
       body {
@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         font-size: 3rem;
+        position: relative;
       }
       @media screen and (max-width: 600px) {
         body {
@@ -36,7 +37,13 @@
         flex-direction: column;
       }
       a {
-          color: white;
+        color: white;
+      }
+      audio {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
@@ -51,6 +58,12 @@
       </nav>
       <h1>Русский корабль,</h1>
     </div>
-    <div class="yellow text"><h1>иди нах@й</h1></div>
+    <div class="yellow text">
+      <h1>иди нах@й</h1>
+      <a href="https://youtu.be/LDrFVdms8yk">Recording</a>
+    </div>
+    <audio controls autoplay loop>
+      <source src="./go-away.mp3" type="audio/mpeg" />
+    </audio>
   </body>
 </html>
